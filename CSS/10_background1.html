@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .box1{
+        width: 1440px;
+        height: 960px;
+        background-image: url('../../images/nature5.jpg');
+        background-size: 100% 100% ;
+        background-blend-mode: multiply;
+        background-color: gray;
+        border: 5px solid gray;
+        margin: 0 auto; /* 좌우 margin을 auto로 지정하면 해당 박스가 부모의 가운데에 배치된다.*/    
+        font-size: 80px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        text-align: center; /* 가로 가운데 정렬 */
+        line-height: 960px; /* 박스 height와 line-height를 같은 값으로 맞추면 세로 가운데 정렬 효과가 나타난다. (텍스트가 1줄일 때만 가능) */
+        
+        }
+
+    </style>
+
+    <div class="box1">
+        이 눈을 언제 치우지..
+    </div>
+
+    <style>
+        .box2{
+            box-sizing: border-box;
+            width: 640px;
+            height: 480px;
+            margin: 0 auto;
+            background-image: url('../../images/architecture2.jpg');
+            background-size: 100% 100%;
+            
+        }
+        
+        .box3{
+            box-sizing: border-box;
+            width: 640px;
+            margin: 20px auto 0;
+            border: 5px solid rgb(124, 124, 212);
+            border-radius: 10px;
+            background-color: rgb(187, 220, 233);
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 0;  /* 박스 height가 없는 경우 상하 padding을 통해 세로 가운데 정렬 효과 */
+        }
+
+
+    </style>
+
+    <div class="box2"></div>
+    <div class="box3">에펠탑</div>
+    
+</body>
+</html>
