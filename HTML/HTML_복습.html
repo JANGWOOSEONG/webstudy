@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <ul type="disc">
+        <li>운동
+            <ul type="circle">
+                <li>축구
+                    <ul type="square">
+                        <li>공격수</li>
+                        <li>수비수</li>
+                        <li>골키퍼</li>
+                    </ul>
+                <li>야구
+                    <ul type="square">
+                        <li>투수</li>
+                        <li>포수</li>
+                        <li>야수</li>
+                    </ul>
+                    </li>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div>
+    <dl>
+        <dt>준비물</dt>
+        <dd>
+            <ul type="square">
+                <li>참치</li>
+                <li>김치</li>
+                <li>개복치</li>
+            </ul>
+        </dd>
+        <dt>조리법</dt>
+        <dd>
+            <ol type="!">
+                <li>물을 넣고 끓여!</li>
+                <li>오늘 저녁은 뭘 먹을까?</li>
+                <li>졸리다 화이팅!</li>
+            </ol>
+        </dd>    
+    </dl>
+</div>
+<div>
+    <ul type="disc">
+        <li>
+            <span>사원목록</span>
+            <div>
+                <div><a href="">무한스크롤</a></div>
+                <div><a href="">페이징</a></div>
+                <div><a href="">검색</a></div>
+            </div>
+        </li>
+        <li><a href="">계층게시판</a></li>
+        <li><a href="">블로그</a></li>
+        <li><a href="">업로드게시판</a></li>
+        <li><a href="">실시간채팅</a></li>
+    </ul>
+</div>
+<div>
+    <dl>
+        <dt>진짜 개졸리다</dt>
+        <dd>
+            <ol type="!">
+                <li>
+                <label>
+                    <input type="radio" name="gender">집을 간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="gender">집을 바로간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="gender">집을 바아로간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="gender">집을 바아아로간다
+                </label>
+                </li>
+            </ol>
+        </dd>
+        <dt>진짜 개졸리다</dt>  
+        <dd>
+            <ol type="!">
+                <li>
+                <label>
+                    <input type="radio" name="wakeup">집을 간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="wakeup">집을 바로간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="wakeup">집을 바아로간다
+                </label>
+                </li>
+                <li>
+                <label>
+                    <input type="radio" name="wakeup">집을 바아아로간다
+                </label>
+                </li>
+            </ol>
+        </dd>
+    </dl>    
+</div>
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="id">
+                <input type="text" placeholder="아이디" id="id">
+            </label>
+            <input type="button" value="중복확인">
+        </div>
+        <br>
+        <div>
+            <label for="pw">
+                <input type="password" placeholder="새 비밀번호" id="pw">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="pw2">
+                <input type="password" placeholder="비밀번호 확인" id="pw2">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">
+                <input type="text" placeholder="이메일" id="email">@
+                <input type="text" placeholder="직접입력" list="domain">
+            <datalist id="domain">
+                <option value="naver.com"></option>
+                <option value="kakao.com"></option>
+                <option value="gmail.com"></option>
+            </datalist>
+            </label>
+        </div>
+    </form>
+    <div>
+        <fieldset>
+            <legend>성별</legend>
+            
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male">남
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female">여
+            </label>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>관심</legend>
+            <div>
+            <label for="it">
+                <input type="checkbox"  id="it">IT
+            </label>
+            <label for="business">
+                <input type="checkbox"  id="business">경영
+            </label>
+            </div>
+            <div>
+                <label for="bank">
+                    <input type="checkbox"  id="bank">금융
+                </label>
+                <label for="make">
+                    <input type="checkbox"  id="make">제조
+                </label>
+                </div>
+                <div>
+                    <label for="service">
+                        <input type="checkbox" id="service">서비스
+                    </label>
+                    <label for="etc">
+                        <input type="checkbox" id="etc">기타
+                    </label>
+                </div>
+        </fieldset>
+    </div>
+    <div>
+        <label for="city">
+            거주지
+            <select>
+                <option>::선택하세요::</option>
+                <option>서울</option>
+                <option>대전</option>
+                <option>대구</option>
+                <option>부산</option>
+                <option>인천</option>
+            </select>
+        </label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="introduce">자기소개</label>
+        <textarea rows="5" cols="30" placeholder="200자 이내 간단히 작성"></textarea>
+    </div>
+    <div>
+        <label for="Document">
+            이력서
+            <input type="file">
+        </label>
+    </div>
+    <div>
+        <label for="data">
+            제출일
+            <input type="data">
+        </label>
+    </div>
+    <div>
+        <button>제출</button>
+        <input type="reset" value="다시입력">
+    </div>
+</div>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>고객구분</th>
+                <th>정원</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>콜로라도</td>
+                <td>여성전용</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">100,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">아레나도</td>
+                <td>가족용</td>
+            </tr>
+            <tr>
+                <td>커플용</td>
+            </tr>
+            <tr>
+                <td>엘레나</td>
+                <td>커플전용</td>
+                <td>2인실</td>
+            </tr>
+            <tr>
+                <th colspan="4">6월 15일까지 전 객실 50% 할인</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
