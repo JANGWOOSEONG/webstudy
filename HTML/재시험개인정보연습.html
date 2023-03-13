@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,14 @@
 </head>
 <body>
     <div>
-        <form action="login.html">
-            <table>
-                <tbody>
+        <form action="재시험로그인연습.html">
+            <div>
+                <table>
                     <tr>
                         <td>이메일</td>
                         <td>
                             <input type="text">
-                            @      
+                            @
                             <input type="text" list="domain" placeholder="선택 또는 직접입력">
                             <datalist id="domain">
                                 <option value="naver.com"></option>
@@ -37,31 +37,26 @@
                         <td>
                             <select>
                                 <option>서울</option>
-                                <option>광주</option>
-                                <option>대구</option>
-                                <option>대전</option>
-                                <option>부산</option>
-                                <option>울산</option>
+                                <option>경기</option>
                                 <option>인천</option>
-                                <option>기타</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>성별</td>
                         <td>
-                            <input type="radio" id="m" name="gender" value="male"><label for="m">남자</label>
-                            <input type="radio" id="f" name="gender" value="female"><label for="f">여자</label>
+                            <input type="radio" name="gender" id="male" value="male"><label for="male">남자</label>
+                            <input type="radio" name="gender" id="female" value="female"><label for="female">여자</label>
                         </td>
                     </tr>
                     <tr>
                         <td>관심분야</td>
                         <td>
-                            <input type="checkbox" id="i1" name="interest" value="travel"><label for="i1">여행</label>
-                            <input type="checkbox" id="i2" name="interest" value="movie"><label for="i2">영화</label>
-                            <input type="checkbox" id="i3" name="interest" value="reading"><label for="i3">독서</label>
-                            <input type="checkbox" id="i4" name="interest" value="music"><label for="i4">음악</label>
-                            <input type="checkbox" id="i5" name="interest" value="nothing"><label for="i5">관심없음</label>
+                            <input type="checkbox" id="travel" name="interest" value="travel"><label for="travel">여행</label>
+                            <input type="checkbox" id="movie" name="interest" value="movie"><label for="movie">영화</label>
+                            <input type="checkbox" id="reading" name="interest" value="reading"><label for="reading">독서</label>
+                            <input type="checkbox" id="music" name="interest" value="music"><label for="music">음악</label>
+                            <input type="checkbox" id="none" name="interest" value="none"><label for="none">관심없음</label>
                         </td>
                     </tr>
                     <tr>
@@ -71,13 +66,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <button>수정완료</button>
-                        </td>
+                        <td colspan="2"><button>수정완료</button></td>
                     </tr>
-                </tbody>
-            </table>
+                </table>
+            </div>
         </form>
     </div>
+    
 </body>
 </html>
